@@ -1,0 +1,74 @@
+/*  --------------------------- */
+/*      Contenedor de Cards     */
+/*  --------------------------- */
+.productos {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    border: 2px solid black;    
+    border-radius: 20px;
+    box-shadow: 10px 10px 6px grey;    
+    padding: 25px;
+    text-align: center;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+/*  --------------------------- */
+/*              Cards          */
+/*  --------------------------- */
+/* Tarjeta de cada menú */
+.productos #section-cards {
+    border: 2px solid black;
+    width: 350px;
+    padding: 15px;
+    margin: 25px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: black;
+    background-color: #e3e2e2;
+    box-shadow: 10px 10px 6px grey;    
+}
+.productos #section-cards h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: black;/*  rgba(255,255,255,0.7)*/
+}
+
+.productos #section-cards img {
+    width: 200px;
+    height: 150px;    
+}
+
+.productos #section-cards button {
+    margin: 5px;
+}
+
+/*  --------------------------- */
+/*      Media Queries           */
+/*  --------------------------- */
+/* Celulares */
+@media screen and (max-width: 480px) {
+    
+}
+
+/* Tabletas */
+@media screen and (max-width: 768px) {
+    
+}
+/* PC's */
+@media screen and (max-width: 1200px) {
+    
+}
+
+/* Fuentes de Google Fonts*/
+/* Propiedades Background => COLOR, IMAGEN, DEGRADADO */
+/* Sección Productos => organizar las cards en forma responsiva con Flexbox */
+/* Sección Reseñas => organizar usando Grid, con una distribución lógica y estética */
+/* Sección Contacto => Responsive, mediante Media Queries */
+/* Multimedia: incluir imagenes video o iframe */
+/* Lista navegación, lista desordenada con enlaces que simulen una navegación interna */
