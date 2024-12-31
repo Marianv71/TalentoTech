@@ -1,0 +1,84 @@
+body {    
+    margin: 0;    
+}
+
+header, main, footer {
+    background-color: #b4b1b198;
+    width: 70vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+
+/*  --------------------------- */
+/*      Media Queries           */
+/*  --------------------------- */
+/* Celulares */
+@media screen and (min-width: 300px) and (max-width: 480px) {
+    
+    header, main, footer {
+        background-color: #b4b1b198;
+        width: 90vw;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    header div {    
+        width: 90vw;        
+        align-items: center;         
+        display: flex;     
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    #logo {
+        width: 100%;
+        margin: 20px;
+        background-image: url(../img/logo.png);
+        background-position: center;        
+    }
+
+    #titulo {    
+        height: auto;
+        text-align: center;        
+    }
+
+    #titulo h1 {
+        font-size: 30px;
+        margin: 0;    
+    }
+
+    header nav {
+        display: none;        
+    }
+
+    .menu_hamburguesa {
+        display: flex;
+    }
+    
+}
+
+@media screen and (min-width: 480) and (max-width: 768px) {
+    .menu_hamburguesa {
+        display: none;
+    }
+}
+
+/* PC's */
+@media screen and (min-width: 768px) and ( max-width: 1800px) {
+ 
+    .menu_hamburguesa {
+        display: none;
+    }
+
+}
+
+/* Fuentes de Google Fonts*/
+/* Propiedades Background => COLOR, IMAGEN, DEGRADADO */
+/* Sección Productos => organizar las cards en forma responsiva con Flexbox */
+/* Sección Reseñas => organizar usando Grid, con una distribución lógica y estética */
+/* Sección Contacto => Responsive, mediante Media Queries */
+/* Multimedia: incluir imagenes video o iframe */
+/* Lista navegación, lista desordenada con enlaces que simulen una navegación interna */

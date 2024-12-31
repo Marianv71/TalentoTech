@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+main h2 {
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+.form-contacto {
+    width: 30%;   
+    margin: auto;
+}
+
+legend {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.form-contacto div {    
+    padding: 10px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+div input, textarea {
+    width: 300px;
+    height: 30px;
+    margin: 0 0 0 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#dni {
+    margin: 0 0 0 130px;
+}
+
+div textarea {
+    display: flex;  
+    margin: 0;
+    width: 470px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+
+
+/*  --------------------------- */
+/*      Media Queries           */
+/*  --------------------------- */
+/* Celulares */
+@media screen and (min-width: 300px) and (max-width: 480px) {
+
+    header, main, footer {
+        background-color: #b4b1b198;
+        width: 90vw;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    header div {    
+        width: 90vw;        
+        align-items: center;         
+        display: flex;     
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    #logo {
+        width: 100%;
+        margin: 20px;
+        background-image: url(../img/logo.png);
+        background-position: center;        
+    }
+
+    #titulo {    
+        height: auto;
+        text-align: center;        
+    }
+
+    #titulo h1 {
+        font-size: 30px;
+        margin: 0;    
+    }
+
+    header nav {
+        display: none;        
+    }
+
+    .menu_hamburguesa {
+        display:contents ;
+    }
+
+    form {
+        width: 90vw;
+    }
+
+    .form-contacto {    
+        margin: 5px;
+    }
+
+    .form-contacto div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div input {                
+        margin: 10px;
+    }
+    
+    #dni {
+        margin: 10px;
+    }
+}
+
+/* Tabletas */
+@media screen and (min-width: 480) and (max-width: 768px) {
+    body {
+        margin: 5px 0 0 0;
+    }
+
+    header, main, footer {
+        background-color: #b4b1b198;
+        width: 90vw;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    header div {    
+        width: 90vw;        
+        align-items: center;         
+        display: flex;     
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    #logo {
+        width: 100%;
+        margin: 20px;
+        background-image: url(../img/logo.png);
+        background-position: center;        
+    }
+
+    #titulo {    
+        height: auto;
+        text-align: center;        
+    }
+
+    #titulo h1 {
+        font-size: 30px;
+        margin: 0;    
+    }
+
+    header nav {
+        display: none;        
+    }
+
+    .menu_hamburguesa {
+        display:contents ;
+    }
+}
+
+/* PC's */
+@media screen and (min-width: 768px) and ( max-width: 1800px) {
+ 
+    .menu_hamburguesa {
+        display: none;
+    }
+
+    #dni {
+        margin: 0 0 0 130px;
+    }
+
+    
+}
